@@ -28,3 +28,26 @@ header{
     background-size: cover;
     background-position: center;
 }
+.hero h1, .hero p{
+    display: none;
+}
+.features{
+    background-color: black;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.feature-1{
+    grid-area: feature-1;
+    background-image: url(./assets/motor2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.feature-2{
+    grid-area: feature-2;
+    background-image: url(./assets/motor3.jpg);
+    background-size: cover;
+    background-position: center;
+}
