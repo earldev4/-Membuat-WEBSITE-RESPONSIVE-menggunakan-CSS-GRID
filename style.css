@@ -39,6 +39,12 @@ header{
     text-align: center;
     cursor: pointer;
 }
+.features .price{
+    font-size: 2em;
+}
+.features > *{
+    text-shadow: 5px 5px 5px black;
+}
 .feature-1{
     grid-area: feature-1;
     background-image: url(./assets/motor2.jpg);
