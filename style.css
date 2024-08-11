@@ -7,6 +7,9 @@ img{
 }
 :root{
     --main-color: #ddd;
+    --title-color: #333;
+    --in-picture-font-color: #fff;
+    --navbar-color: #000;
 }
 body{
     background-color: var(--main-color);
@@ -32,8 +35,7 @@ header{
     display: none;
 }
 .features{
-    background-color: black;
-    color: white;
+    color: var(--in-picture-font-color);
     display: grid;
     place-content: center;
     text-align: center;
@@ -56,4 +58,28 @@ header{
     background-image: url(./assets/motor3.jpg);
     background-size: cover;
     background-position: center;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+nav .brand {
+    font-size: 1.2em;
+    color: var(--title-color);
+}
+nav ul{
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+nav a{
+    background-color: var(--navbar-color);
+    color: var(--in-picture-font-color);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
 }
