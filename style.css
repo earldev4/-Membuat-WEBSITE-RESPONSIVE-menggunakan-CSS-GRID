@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+:root{
+    --main-color: #ddd;
+}
+body{
+    background-color: var(--main-color);
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    /* font-weight: <weight>; */
+    margin: 50px;
+}
+header{
+    display: grid;
+    grid-template-areas: "hero hero feature-1"
+                         "hero hero feature-2";
+}
+.hero{
+    grid-area: hero;
+    min-height: 300px;
+    padding: 50px;
+    background-image: url(./assets/motor.jpg);
+    background-size: cover;
+    background-position: center;
+}
