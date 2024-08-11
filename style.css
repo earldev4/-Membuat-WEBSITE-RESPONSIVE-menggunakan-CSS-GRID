@@ -18,6 +18,10 @@ body{
     /* font-weight: <weight>; */
     margin: 50px;
 }
+.container{
+    display: grid;
+    gap: 10px;
+}
 header{
     display: grid;
     grid-template-areas: "hero hero feature-1"
@@ -33,6 +37,8 @@ header{
 }
 .hero h1, .hero p{
     display: none;
+    color: var(--in-picture-font-color);
+    text-shadow: 5px 5px 5px black;
 }
 .features{
     color: var(--in-picture-font-color);
@@ -60,15 +66,16 @@ header{
     background-position: center;
 }
 nav{
+    order: -1;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
 }
-nav .brand {
+.brand {
     font-size: 1.2em;
     color: var(--title-color);
 }
-nav ul{
+.menu-list{
     display: grid;
     list-style: none;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -83,3 +90,45 @@ nav a{
     padding: 5px;
     text-transform: uppercase;
 }
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(242, 207, 244);
+    border-radius: 3px;
+}
+@media only screen and (max-width: 1024px){
+    nav{
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+    .brand{
+        display: none;
+    }
+    .hero h1, .hero p{
+        display: block;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 768px){
+    nav{
+        display: none;
+    }
+}
+@media only screen and (max-width: 576px){
+    
+}
+/* @media only screen and (max-width: 1024px){
+    
+} */
