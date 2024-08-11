@@ -103,6 +103,10 @@ nav a{
     background-color: var(--title-color);
     border-radius: 3px;
 }
+.slide{
+    transform: translateX(0%);
+    transition-duration: 200ms;
+}
 @media only screen and (max-width: 1024px){
     nav{
         order: inherit;
@@ -142,6 +146,7 @@ nav a{
         justify-content: space-around;
         z-index: -1;
         transform: translateX(100%);
+        transition-duration: 200ms;
     }
 }
 @media only screen and (max-width: 576px){
