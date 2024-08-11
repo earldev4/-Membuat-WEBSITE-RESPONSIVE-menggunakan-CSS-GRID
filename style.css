@@ -105,7 +105,6 @@ nav a{
 }
 .slide{
     transform: translateX(0%);
-    transition-duration: 200ms;
 }
 @media only screen and (max-width: 1024px){
     nav{
@@ -142,15 +141,19 @@ nav a{
         width: 30%;
         top: 0;
         align-items: center;
-        background-color: blueviolet;
+        background-color: var(--navbar-color);
         justify-content: space-around;
-        z-index: -1;
+        z-index: 1;
         transform: translateX(100%);
-        transition-duration: 200ms;
+        transition: all 1s;
     }
 }
 @media only screen and (max-width: 576px){
-    
+    header{
+        grid-template-areas: "hero"
+                             "feature-1"
+                             "feature-2";
+    }
 }
 /* @media only screen and (max-width: 1024px){
     
