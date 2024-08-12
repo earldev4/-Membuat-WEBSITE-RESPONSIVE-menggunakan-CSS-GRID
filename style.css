@@ -106,7 +106,16 @@ nav a{
     border-radius: 3px;
 }
 .slide{
-    transform: translateX(0%);
+    transform: translateY(0%);
+}
+.image-scroll{
+    margin: 50px auto;
+    display: flex;
+    width: 70%;
+    overflow: hidden;
+}
+.image-scroll img{
+    width: 100%;
 }
 section{
     padding-top: 20px;
@@ -172,16 +181,15 @@ section{
     }
     nav ul{
         position: absolute;
-        right: 0;
-        flex-direction: column;
-        height: 100vh;
-        width: 30%;
+        right: 0; 
+        height: 10vh;
+        width: 100%;
         top: 0;
         align-items: center;
         background-color: var(--navbar-color);
         justify-content: space-around;
         z-index: 1;
-        transform: translateX(100%);
+        transform: translateY(-100%);
         transition: all 1s;
     }
 }
