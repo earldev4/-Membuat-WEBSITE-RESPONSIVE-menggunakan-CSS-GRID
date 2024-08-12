@@ -115,6 +115,33 @@ nav a{
 }
 .image-list{
     display: flex;
+    width: 100%;
+    transition: 2s;
+}
+.image-list img{
+    width: 100%;
+}
+#slide-1:target~.image-list{
+    margin-left: 0;
+}
+#slide-2:target~.image-list{
+    margin-left: -100%;
+}
+#slide-3:target~.image-list{
+    margin-left: -200%;
+}
+#slide-4:target~.image-list{
+    margin-left: -300%;
+}
+.slide-navigation{
+    padding: 10px;
+    text-align: center;
+}
+.slide-navigation a svg{
+    fill: var(--border-color);
+}
+.slide-navigation a svg:visited{
+    fill: var(--title-color);
 }
 section{
     padding-top: 20px;
