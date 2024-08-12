@@ -108,14 +108,13 @@ nav a{
 .slide{
     transform: translateY(0%);
 }
-.image-scroll{
-    margin: 50px auto;
-    display: flex;
-    width: 70%;
+.slider-wrapper{
     overflow: hidden;
+    width: 70%;
+    margin: 50px auto;
 }
-.image-scroll img{
-    width: 100%;
+.image-list{
+    display: flex;
 }
 section{
     padding-top: 20px;
