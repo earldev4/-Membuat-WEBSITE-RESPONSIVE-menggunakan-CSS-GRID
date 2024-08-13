@@ -5,12 +5,14 @@ menu_toggle.addEventListener('click',() =>{
     list.classList.toggle('slide');
 });
 
-const card = document.querySelectorAll(".service")
+const cards = document.querySelectorAll(".service")
 
 const observer = new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
-        entry.target.classList.toggle("serv-animation")
+        entry.target.classList.toggle("serv-animation", entry.isIntersecting)
     })
 })
 
-observer.observe(card[0])
+cards.forEach(card=>{
+    observer.observe(card)
+})
