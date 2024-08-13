@@ -11,6 +11,8 @@ const observer = new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
         entry.target.classList.toggle("serv-animation", entry.isIntersecting)
     })
+}, {
+    threshold: 0.5,
 })
 
 cards.forEach(card=>{
