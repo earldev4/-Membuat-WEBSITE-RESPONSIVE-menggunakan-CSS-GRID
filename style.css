@@ -162,10 +162,16 @@ section{
     gap: 10px;
 }
 .service{
+    transform: translateY(100%);
+    opacity: 0;
     background-color: var(--in-picture-font-color);
     padding: 10px;
     text-align: center;
     border: solid 1px var(--border-color);
+}
+.serv-animation{
+    transform: none;
+    opacity: 1;
 }
 .icon{
     font-size: 3em;
