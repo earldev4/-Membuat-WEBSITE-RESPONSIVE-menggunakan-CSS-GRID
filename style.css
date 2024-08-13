@@ -155,20 +155,20 @@ nav a{
 .slide-navigation a:hover{
     background-color: rgb(19, 19, 167);
 }
-section{
+.services{
+    transition: 1s;
+    transform: translateY(50%);
+    opacity: 0;
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
 }
 .service{
-    transform: translateY(50%);
-    opacity: 0;
     background-color: var(--in-picture-font-color);
     padding: 10px;
     text-align: center;
     border: solid 1px var(--border-color);
-    transition: 1s;
 }
 .serv-animation{
     transform: none;
