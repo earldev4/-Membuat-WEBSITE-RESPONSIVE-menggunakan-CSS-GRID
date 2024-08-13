@@ -157,7 +157,7 @@ nav a{
 }
 .services{
     transition: 1s;
-    transform: translateY(50%);
+    transform: translateY(20%);
     opacity: 0;
     padding-top: 20px;
     display: grid;
